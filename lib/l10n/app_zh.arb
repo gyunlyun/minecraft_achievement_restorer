@@ -1,0 +1,67 @@
+{
+  "@@locale": "zh",
+  "appTitle": "我的世界成就恢复器",
+  "appSubtitle": "恢复我的世界基岩版世界中的成就",
+  
+  "scanningWorlds": "🔍 正在扫描我的世界存档...",
+  "scanningPath": "正在扫描：{path}",
+  "checkingWorld": "正在检查世界：{worldName}",
+  "foundWorlds": "✅ 找到 {count} 个世界",
+  
+  "noWorldsFound": "未找到世界",
+  "noWorldsFoundDescription": "请先在我的世界中创建一个世界",
+  "errorScanningWorlds": "扫描世界时出错",
+  "minecraftNotFound": "未找到我的世界基岩版",
+  "minecraftNotFoundDescription": "请确保已安装我的世界基岩版（Windows 10版）",
+  
+  "searchWorlds": "搜索世界...",
+  "selectAll": "全选",
+  "clearSelection": "清除选择",
+  "selectedCount": "已选择 {count} 个",
+  "processWorlds": "处理 {count} 个世界",
+  
+  "confirmProcessing": "⚠️ 确认处理",
+  "confirmProcessingMessage": "您已选择 {count} 个世界进行处理。",
+  "confirmProcessingWarning": "这将修改 level.dat 文件以恢复成就。",
+  "confirmProcessingBackup": "💡 建议在继续之前备份您的世界。",
+  "confirmProcessingQuestion": "您要继续吗？",
+  "cancel": "取消",
+  "continueButton": "继续",
+  
+  "processingWorlds": "正在处理世界",
+  "startingProcessing": "🚀 开始恢复成就...",
+  "processingWorldCount": "正在处理 {count} 个世界...",
+  "processingWorld": "正在处理：{worldName}",
+  "completedWorld": "✅ 已完成：{worldName}",
+  "failedWorld": "❌ 失败：{worldName} - {error}",
+  "allProcessingComplete": "🎉 成功处理了所有 {count} 个世界！",
+  "partialProcessingComplete": "⚠️ 已处理 {successful} 个世界，{failed} 个失败",
+  "restartMinecraft": "💡 您现在可以重启我的世界并检查您的成就。",
+  
+  "refresh": "刷新世界列表",
+  "close": "关闭",
+  "ok": "确定",
+  "error": "错误",
+  "tryAgain": "重试",
+  
+  "noWorldsSelected": "未选择世界",
+  "noWorldsSelectedDescription": "请至少选择一个世界进行处理。",
+  
+  "worldInvalid": "此世界无法处理（缺少 level.dat）",
+  "createdBackup": "已创建备份：{filename}",
+  "modifiedLevelDat": "已修改 level.dat 以恢复成就",
+  
+  "progressOperations": "进度：已完成 {count} 个操作",
+  
+  "language": "语言",
+  "settings": "设置",
+  "switchLanguage": "切换语言",
+  "languageChangedToEnglish": "Language changed to English",
+  "languageChangedToChinese": "语言已切换为中文",
+
+  "sortBy": "排序方式",
+  "sortByName": "按名称排序",
+  "sortByDate": "按修改时间排序",
+  "sortAscending": "升序",
+  "sortDescending": "降序"
+}

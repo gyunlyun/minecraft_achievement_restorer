@@ -1,0 +1,58 @@
+name: Build and Release
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main ]
+  release:
+    types: [ published ]
+
+jobs:
+  build-windows:
+    runs-on: windows-latest
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Setup Flutter
+      uses: subosito/flutter-action@v2
+      with:
+        flutter-version: '3.32.1'
+        channel: 'stable'
+    
+    - name: Install dependencies
+      run: flutter pub get
+    
+    - name: Generate localizations
+      run: flutter gen-l10n
+    
+    - name: Run tests
+      run: flutter test
+    
+    - name: Build Windows app
+      run: flutter build windows --release
+    
+    - name: Create release archive
+      if: github.event_name == 'release'
+      run: |
+        cd build/windows/x64/runner/Release
+        7z a -tzip ../../../../../minecraft-achievement-restorer-windows.zip *
+    
+    - name: Upload release asset
+      if: github.event_name == 'release'
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ github.event.release.upload_url }}
+        asset_path: ./minecraft-achievement-restorer-windows.zip
+        asset_name: minecraft-achievement-restorer-windows.zip
+        asset_content_type: application/zip
+    
+    - name: Upload build artifacts
+      if: github.event_name != 'release'
+      uses: actions/upload-artifact@v4
+      with:
+        name: windows-build
+        path: build/windows/x64/runner/Release/

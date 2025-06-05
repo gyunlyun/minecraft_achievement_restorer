@@ -1,0 +1,302 @@
+{
+  "@@locale": "en",
+  "appTitle": "Minecraft Achievement Restorer",
+  "@appTitle": {
+    "description": "The title of the application"
+  },
+  "appSubtitle": "Restore achievements in Minecraft Bedrock worlds",
+  "@appSubtitle": {
+    "description": "Subtitle describing the app's purpose"
+  },
+  
+  "scanningWorlds": "🔍 Scanning for Minecraft worlds...",
+  "@scanningWorlds": {
+    "description": "Message shown when scanning for worlds"
+  },
+  "scanningPath": "Scanning: {path}",
+  "@scanningPath": {
+    "description": "Message showing current scanning path",
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "checkingWorld": "Checking world: {worldName}",
+  "@checkingWorld": {
+    "description": "Message when checking a specific world",
+    "placeholders": {
+      "worldName": {
+        "type": "String"
+      }
+    }
+  },
+  "foundWorlds": "✅ Found {count} worlds",
+  "@foundWorlds": {
+    "description": "Message showing number of worlds found",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  
+  "noWorldsFound": "No worlds found",
+  "@noWorldsFound": {
+    "description": "Message when no worlds are found"
+  },
+  "noWorldsFoundDescription": "Please create a world in Minecraft first",
+  "@noWorldsFoundDescription": {
+    "description": "Description when no worlds are found"
+  },
+  "errorScanningWorlds": "Error scanning worlds",
+  "@errorScanningWorlds": {
+    "description": "Error message when scanning fails"
+  },
+  "minecraftNotFound": "Minecraft Bedrock Edition not found",
+  "@minecraftNotFound": {
+    "description": "Error when Minecraft is not installed"
+  },
+  "minecraftNotFoundDescription": "Please ensure Minecraft Bedrock Edition (Windows 10 Edition) is installed",
+  "@minecraftNotFoundDescription": {
+    "description": "Description for Minecraft not found error"
+  },
+  
+  "searchWorlds": "Search worlds...",
+  "@searchWorlds": {
+    "description": "Placeholder text for world search field"
+  },
+  "selectAll": "Select All",
+  "@selectAll": {
+    "description": "Button to select all worlds"
+  },
+  "clearSelection": "Clear Selection",
+  "@clearSelection": {
+    "description": "Button to clear world selection"
+  },
+  "selectedCount": "{count} selected",
+  "@selectedCount": {
+    "description": "Shows number of selected worlds",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "processWorlds": "Process {count} World(s)",
+  "@processWorlds": {
+    "description": "Button text for processing worlds",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  
+  "confirmProcessing": "⚠️ Confirm Processing",
+  "@confirmProcessing": {
+    "description": "Title for confirmation dialog"
+  },
+  "confirmProcessingMessage": "You have selected {count} world(s) for processing.",
+  "@confirmProcessingMessage": {
+    "description": "Confirmation message",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "confirmProcessingWarning": "This will modify the level.dat files to restore achievements.",
+  "@confirmProcessingWarning": {
+    "description": "Warning about file modification"
+  },
+  "confirmProcessingBackup": "💡 It's recommended to backup your worlds before proceeding.",
+  "@confirmProcessingBackup": {
+    "description": "Backup recommendation"
+  },
+  "confirmProcessingQuestion": "Do you want to continue?",
+  "@confirmProcessingQuestion": {
+    "description": "Confirmation question"
+  },
+  "cancel": "Cancel",
+  "@cancel": {
+    "description": "Cancel button"
+  },
+  "continueButton": "Continue",
+  "@continueButton": {
+    "description": "Continue button"
+  },
+  
+  "processingWorlds": "Processing Worlds",
+  "@processingWorlds": {
+    "description": "Title for processing dialog"
+  },
+  "startingProcessing": "🚀 Starting achievement restoration...",
+  "@startingProcessing": {
+    "description": "Message when starting processing"
+  },
+  "processingWorldCount": "Processing {count} world(s)...",
+  "@processingWorldCount": {
+    "description": "Message showing processing count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "processingWorld": "Processing: {worldName}",
+  "@processingWorld": {
+    "description": "Message when processing specific world",
+    "placeholders": {
+      "worldName": {
+        "type": "String"
+      }
+    }
+  },
+  "completedWorld": "✅ Completed: {worldName}",
+  "@completedWorld": {
+    "description": "Message when world processing completed",
+    "placeholders": {
+      "worldName": {
+        "type": "String"
+      }
+    }
+  },
+  "failedWorld": "❌ Failed: {worldName} - {error}",
+  "@failedWorld": {
+    "description": "Message when world processing failed",
+    "placeholders": {
+      "worldName": {
+        "type": "String"
+      },
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "allProcessingComplete": "🎉 Successfully processed all {count} world(s)!",
+  "@allProcessingComplete": {
+    "description": "Message when all processing completed successfully",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "partialProcessingComplete": "⚠️ Processed {successful} world(s), {failed} failed",
+  "@partialProcessingComplete": {
+    "description": "Message when some processing failed",
+    "placeholders": {
+      "successful": {
+        "type": "int"
+      },
+      "failed": {
+        "type": "int"
+      }
+    }
+  },
+  "restartMinecraft": "💡 You can now restart Minecraft and check your achievements.",
+  "@restartMinecraft": {
+    "description": "Message about restarting Minecraft"
+  },
+  
+  "refresh": "Refresh world list",
+  "@refresh": {
+    "description": "Tooltip for refresh button"
+  },
+  "close": "Close",
+  "@close": {
+    "description": "Close button"
+  },
+  "ok": "OK",
+  "@ok": {
+    "description": "OK button"
+  },
+  "error": "Error",
+  "@error": {
+    "description": "Error dialog title"
+  },
+  "tryAgain": "Try Again",
+  "@tryAgain": {
+    "description": "Try again button"
+  },
+  
+  "noWorldsSelected": "No worlds selected",
+  "@noWorldsSelected": {
+    "description": "Error when no worlds are selected"
+  },
+  "noWorldsSelectedDescription": "Please select at least one world to process.",
+  "@noWorldsSelectedDescription": {
+    "description": "Description for no worlds selected error"
+  },
+  
+  "worldInvalid": "This world cannot be processed (missing level.dat)",
+  "@worldInvalid": {
+    "description": "Message for invalid worlds"
+  },
+  "createdBackup": "Created backup: {filename}",
+  "@createdBackup": {
+    "description": "Message when backup is created",
+    "placeholders": {
+      "filename": {
+        "type": "String"
+      }
+    }
+  },
+  "modifiedLevelDat": "Modified level.dat for achievement restoration",
+  "@modifiedLevelDat": {
+    "description": "Message when level.dat is modified"
+  },
+  
+  "progressOperations": "Progress: {count} operations completed",
+  "@progressOperations": {
+    "description": "Progress counter in dialog",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  
+  "language": "Language",
+  "@language": {
+    "description": "Language menu item"
+  },
+  "settings": "Settings",
+  "@settings": {
+    "description": "Settings menu item"
+  },
+  "switchLanguage": "Switch Language",
+  "@switchLanguage": {
+    "description": "Language switch menu item"
+  },
+  "languageChangedToEnglish": "Language changed to English",
+  "@languageChangedToEnglish": {
+    "description": "Message when language is changed to English"
+  },
+  "languageChangedToChinese": "语言已切换为中文",
+  "@languageChangedToChinese": {
+    "description": "Message when language is changed to Chinese"
+  },
+
+  "sortBy": "Sort by",
+  "@sortBy": {
+    "description": "Sort options label"
+  },
+  "sortByName": "Sort by Name",
+  "@sortByName": {
+    "description": "Sort by world name option"
+  },
+  "sortByDate": "Sort by Date",
+  "@sortByDate": {
+    "description": "Sort by last modified date option"
+  },
+  "sortAscending": "Ascending",
+  "@sortAscending": {
+    "description": "Ascending sort order"
+  },
+  "sortDescending": "Descending",
+  "@sortDescending": {
+    "description": "Descending sort order"
+  }
+}
