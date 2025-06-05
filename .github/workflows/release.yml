@@ -17,7 +17,7 @@ jobs:
     - name: Setup Flutter
       uses: subosito/flutter-action@v2
       with:
-        flutter-version: '3.32.1'
+        flutter-version: '3.32.1'  # 使用最新版本，包含 Dart 3.8+
         channel: 'stable'
         
     - name: Enable Windows desktop
@@ -64,50 +64,6 @@ jobs:
       with:
         files: release/minecraft-achievement-restorer-windows.zip
         name: Release ${{ github.ref_name }}
-        body: |
-          ## Minecraft Achievement Restorer ${{ github.ref_name }}
-          
-          ### 🎉 What's New
-          - Bug fixes and improvements
-          - Enhanced stability
-          
-          ### 📦 Download
-          - **Windows**: Download `minecraft-achievement-restorer-windows.zip`
-          - Extract the ZIP file and run `minecraft_achievement_restorer.exe`
-          
-          ### 🔧 System Requirements
-          - Windows 10/11
-          - Minecraft Bedrock Edition (Windows 10 Edition)
-          
-          ### 📖 Documentation
-          - [English README](README.md)
-          - [中文说明](README_CN.md)
-          
-          ### ⚠️ Important Notes
-          - Always backup your worlds before processing
-          - Close Minecraft completely before using this tool
-          - The application creates automatic backups, but manual backups are recommended
-          
-          ---
-          
-          ## Minecraft 成就恢复器 ${{ github.ref_name }}
-          
-          ### 🎉 更新内容
-          - 错误修复和改进
-          - 增强稳定性
-          
-          ### 📦 下载
-          - **Windows**: 下载 `minecraft-achievement-restorer-windows.zip`
-          - 解压 ZIP 文件并运行 `minecraft_achievement_restorer.exe`
-          
-          ### 🔧 系统要求
-          - Windows 10/11
-          - Minecraft 基岩版（Windows 10 版本）
-          
-          ### ⚠️ 重要提示
-          - 处理前请务必备份世界
-          - 使用工具前请完全关闭 Minecraft
-          - 应用会自动创建备份，但建议手动备份
         draft: false
         prerelease: false
       env:
