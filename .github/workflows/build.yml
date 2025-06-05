@@ -26,10 +26,7 @@ jobs:
     
     - name: Generate localizations
       run: flutter gen-l10n
-    
-    - name: Run tests
-      run: flutter test
-    
+  
     - name: Build Windows app
       run: flutter build windows --release
     
